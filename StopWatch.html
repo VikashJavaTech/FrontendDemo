@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(45deg, blue, yellow, red);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+        }
+
+        h1 {
+            margin-top: 10px;
+            font-size: 80px;
+            color: royalblue;
+            text-align: center;
+        }
+
+        .digit {
+            font-size: 100px;
+            color: black;
+        }
+
+        .txt {
+            font-size: 30px;
+            color: brown;
+        }
+
+        #buttons {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .btn {
+            width: 180px;
+            padding: 10px 15px;
+            margin: 0px 20px;
+            border-top-right-radius: 65px;
+            border-bottom-left-radius: 65px;
+            cursor: pointer;
+            font-size: 40px;
+            transition: 0.5s;
+            color: royalblue;
+            font-weight: 500;
+        }
+
+        #start {
+            background-color: brown;
+            color: wheat;
+        }
+
+        #stop {
+            background-color: aqua;
+            color: black;
+        }
+
+        #reset {
+            background-color: chartreuse;
+            color: black;
+        }
+
+        #time {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>STOP WATCH</h1>
+        <div id="time">
+            <span class="digit" id="hr">00</span>
+            <span class="txt">Hr</span>
+            <span class="digit" id="min">00</span>
+            <span class="txt">Min</span>
+            <span class="digit" id="sec">00</span>
+            <span class="txt">Sec</span>
+            <span class="digit" id="count">00</span>
+        </div>
+        <div id="buttons">
+            <button class="btn" id="start"> Start</button>
+            <button class="btn" id="stop">Stop</button>
+            <button class="btn" id="reset">Reset</button>
+        </div>
+    </div>
+    <script src="app1.js"></script>
+</body>
+
+</html>
